@@ -98,13 +98,14 @@ export const BuyCourseCard = ({ imageUrl, header, description, productId, isPurc
                     ) : !isPurchased && token ? (
                         <button className="buy-now-btn" onClick={() => checkout(productId, token, setLoading)}>
                             <span>
-                                <img className="cart-icon" src={images['shopping-cart.svg']} />
+                                <img className="cart-icon" src={images['shopping-cart.svg']} alt="shop-icon" />
                             </span>{' '}
+                            Buy Now
                         </button>
                     ) : (
                         <button className="buy-now-btn" onClick={() => handleGoogleSigninClick()}>
                             <span>
-                                <img className="cart-icon" src={images['shopping-cart.svg']} />
+                                <img className="cart-icon" src={images['shopping-cart.svg']} alt="shop-icon" />
                             </span>{' '}
                             Buy Now
                         </button>
